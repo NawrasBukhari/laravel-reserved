@@ -32,7 +32,6 @@ class RestrictedServiceProvider extends ServiceProvider
     public function register()
     {
         $this->commands(CrawlRoutes::class);
-        $this->mergeConfigFrom(__DIR__.'/../config/restricted.php', 'restricted');
         $this->app->register(\NawrasBukhari\Restricted\RestrictedServiceProvider::class);
     }
 
