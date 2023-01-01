@@ -22,7 +22,7 @@ composer require nawrasbukhari/restricted
 ### Publish the config
 
 ```
-php artisan vendor:publish --provider="NawrasBukhari\Restricted\RestrictedServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Nawras\Restricted\RestrictedServiceProvider" --tag="config"
 ```
 
 ## Usage
