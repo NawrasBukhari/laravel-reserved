@@ -2,9 +2,6 @@
 
 namespace NawrasBukhari\Restricted;
 
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\ServiceProvider;
 use NawrasBukhari\Restricted\Commands\CrawlRoutes;
 
 class RestrictedServiceProvider extends ServiceProvider
