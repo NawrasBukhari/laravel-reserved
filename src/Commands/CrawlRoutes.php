@@ -2,8 +2,8 @@
 
 namespace NawrasBukhari\Restricted\Commands;
 
-use Illuminate\Routing\RouteCollection;
 use Illuminate\Console\Command;
+use Illuminate\Routing\RouteCollection;
 use Illuminate\Routing\Router;
 
 class CrawlRoutes extends Command

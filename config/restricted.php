@@ -12,7 +12,7 @@ return [
     |
     |
     */
-    'file_path' => public_path('reserved.txt'),
+    'file_path' => public_path('reserved.txt') ?? '',
 
     /*
     |--------------------------------------------------------------------------

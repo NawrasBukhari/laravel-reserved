@@ -2,10 +2,10 @@
 
 namespace NawrasBukhari\Restricted;
 
-use NawrasBukhari\Restricted\Commands\CrawlRoutes;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Collection;
+use NawrasBukhari\Restricted\Commands\CrawlRoutes;
 
 class RestrictedServiceProvider extends ServiceProvider
 {
@@ -19,9 +19,8 @@ class RestrictedServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/restricted.php' => config_path('restricted.php'),
-        ], 'config');
-
+            __DIR__.'/../config/restricted.php' => config_path('restricted.php'),
+        ]);
 
         $this->fileName = config('restricted.file_path') ?: public_path('reserved.txt');
         $this->initialize();
