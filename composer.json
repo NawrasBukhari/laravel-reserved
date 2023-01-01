@@ -23,7 +23,7 @@
   },
   "autoload": {
     "psr-4": {
-      "NawrasBukhari\\Restricted\\": "src"
+      "NawrasBukhari\\Restricted\\": "src/"
     }
   },
   "require-dev": {
@@ -32,8 +32,11 @@
   "extra": {
     "laravel": {
       "providers": [
-        "NawrasBukhari\\Restricted\\RestrictedServiceProvider"
-      ]
+        "\\NawrasBukhari\\Restricted\\RestrictedServiceProvider"
+      ],
+      "aliases": {
+        "Restricted": "\\NawrasBukhari\\Restricted\\Facades\\Restricted"
+      }
     }
   }
 }

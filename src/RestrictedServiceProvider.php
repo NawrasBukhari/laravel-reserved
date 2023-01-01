@@ -19,8 +19,9 @@ class RestrictedServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/restricted.php' => config_path('restricted.php'),
+            __DIR__ . '/../config/restricted.php' => config_path('restricted.php'),
         ], 'config');
+
 
         $this->fileName = config('restricted.file_path') ?: public_path('reserved.txt');
         $this->initialize();
